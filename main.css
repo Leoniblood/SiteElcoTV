@@ -1,0 +1,168 @@
+/*
+GLOBAL
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+HEADER
+*/
+
+
+body {
+  background-image: url(background.jpg);
+  background-color: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.menu {
+    border-bottom: 2px solid whitesmoke; 
+    font-size: larger;
+}
+
+.logo {
+    margin-left: 50px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+
+.navMenu {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  margin-right: 50px;
+  margin-left: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(72px);
+  transform: translateX(72px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(275px);
+  transform: translateX(275px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(475px);
+  transform: translateX(475px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(682px);
+  transform: translateX(682px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+
+.twitch {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 20%;
+    align-items: center;
+    box-shadow: 0px 0px 20px 10px rgb(252, 186, 4);
+}
+
+.upload-btn-wrapper {
+  margin-top: 2%;
+  margin-left: 50%;
+  margin-right: 44%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.archives {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#archive {
+  display: flex;
+  align-items: flex-start;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40%;
+  margin-top: 5%;
+  color: white;
+}
